@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>scanthng.js Testing App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="root-container">
+      <div class="navbar">
+        <img class="brand-logo" src="./assets/logo.png">
+      </div>
+      <div class="content">
+        <div class="title">scanthng.js Testing App</div>
+        <div class="description">
+          Choose options below as required, then scan a barcode or recognise an EVRYTHNG
+          product with the device's video stream.
+        </div>
+
+        <div id="stream_container" class="stream-container">
+          <!-- Video inserted here by scanthng.js -->
+        </div>
+        <div id="button-start-camera" class="button">Start Camera</div>
+        <a id="result" class="result" target="_blank">No results yet.</a>
+
+        <hr/>
+
+        <!-- Options -->
+        <div id="div-options">
+          <div class="title">Options</div>
+          <div class="row">
+            <table class="table-options">
+              <tr>
+                <td>Redirect to URL</td>
+                <td>
+                  <input type="checkbox" id="checkbox-redirect" class="checkbox-redirect" checked>
+                </td>
+              </tr>
+              <tr>
+                <td>Scan Type</td>
+                <td>
+                  <select id="select-type">
+                    <option value="qr">QR Codes (native)</option>
+                    <option value="ir">Image Recognition (API)</option>
+                    <option value="other">Other Codes (API)</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Application API Key</td>
+                <td>
+                  <input type="text" id="input-api-key" class="input-api-key">
+                </td>
+              </tr>
+              <tr>
+                <td/>
+                <td>
+                  <div class="description">
+                    If the 'app' query parameter is present, it will be prefilled above.
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Libs -->
+    <script src="lib/jsQR/jsQR.js"></script>
+
+    <!-- EVRYTHNG SDKs -->
+    <script src="https://d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/evrythng-extended-4.7.2.min.js"></script>
+    <script src="https://d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/scanthng-3.1.0.min.js"></script>
+    
+      <!-- App -->
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

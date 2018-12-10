@@ -1,0 +1,10 @@
+{
+  "name": "scanthng-stream-test",
+  "version": "1.0.0",
+  "description": "Test app for scanning a video stream with scanthng.js",
+  "scripts": {
+    "serve": "python -m SimpleHTTPServer"
+  },
+  "author": "EVRYTHNG",
+  "license": "Apache-2.0"
+}
