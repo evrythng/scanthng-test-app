@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Test app for scanning a video stream with scanthng.js",
   "scripts": {
+    "build": "echo window.config = { \\\"APPLICATION_API_KEY\\\": \\\"$APPLICATION_API_KEY\\\" } > ./config.js",
     "serve": "python -m SimpleHTTPServer"
   },
   "author": "EVRYTHNG",

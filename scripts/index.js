@@ -67,8 +67,11 @@ const startCamera = () => {
 };
 
 const main = () => {
-  // Prefil from URL query param if available
-  UI.inputApiKey.value = getQueryParam('app') || '';
+  UI.inputApiKey.value = window.config
+    // If fixed config exists, use it
+    ? window.config.APPLICATION_API_KEY
+    // Prefil from URL query param if available
+    : getQueryParam('app') || '';
 
   UI.buttonStartCamera.addEventListener('click', startCamera);
 };
