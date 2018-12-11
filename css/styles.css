@@ -121,7 +121,7 @@ video {
 
 hr {
   margin-top: 55px;
-  width: 500px;
+  min-width: 350px;
   color: #0005;
 }
 
