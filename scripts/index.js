@@ -28,7 +28,7 @@ const createFilter = () => {
   const map = {
     qr: { method: '2d', type: 'qr_code' },
     ir: { method: 'ir', type: 'image' },
-    other: {method: 'auto', type: 'auto' },
+    other: { method: 'auto', type: 'auto' },
   };
   return map[UI.selectMethod.value];
 };
@@ -63,7 +63,7 @@ const startCamera = () => {
       return;
     }
   })
-  .catch(alert);
+  .catch(console.log);
 };
 
 const main = () => {

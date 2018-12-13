@@ -16,6 +16,35 @@ body {
   color: #434343;
 }
 
+hr {
+  margin-top: 55px;
+  min-width: 350px;
+  color: #0005;
+}
+
+td {
+  text-align: left;
+  padding-top: 10px;
+}
+
+select {
+  border: 1px solid #0005;
+  background-color: #0000;
+  border-right: 4px solid #0005;
+  height: 25px;
+  width: 200px;
+  margin: auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  margin-top: -3px;
+  object-fit: cover;
+  -webkit-clip-path: inset(1px 1px 1px 1px round 5% 5% 5% 5%);
+  clip-path: inset(1px 1px 1px 1px round 5% 5% 5% 5%);
+}
+
 .root-container {
   display: flex;
   flex-direction: column;
@@ -83,15 +112,6 @@ body {
   clip-path: inset(1px 1px 1px 1px round 5% 5% 5% 5%);
 }
 
-video {
-  width: 100%;
-  height: 100%;
-  margin-top: -3px;
-  object-fit: cover;
-  -webkit-clip-path: inset(1px 1px 1px 1px round 5% 5% 5% 5%);
-  clip-path: inset(1px 1px 1px 1px round 5% 5% 5% 5%);
-}
-
 .result {
   min-width: 250px;
   font-size: 0.9rem;
@@ -110,7 +130,9 @@ video {
 }
 
 .checkbox-redirect {
-  margin-top: 10px;
+  margin: auto;
+  width: 16px;
+  height: 16px;
 }
 
 .brand-logo {
@@ -119,28 +141,10 @@ video {
   margin: auto;
 }
 
-hr {
-  margin-top: 55px;
-  min-width: 350px;
-  color: #0005;
-}
-
-.table-options {
-  min-width: 400px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-td {
-  text-align: left;
-  padding-top: 10px;
-}
-
-select {
-  border: 1px solid #0005;
-  background-color: #0000;
-  border-right: 4px solid #0005;
-  height: 25px;
+.subtitle {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .row {
@@ -150,10 +154,28 @@ select {
 }
 
 .input-api-key {
-  min-width: 250px;
-  height: 20px;
+  width: 300px;
+  height: 25px;
+  margin: auto;
+  margin-top: 5px;
+  border: solid 1px #0005;
+  padding: 5px;
 }
 
 .mw-90 {
   max-width: 90%;
+}
+
+.div-options {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footnote {
+  font-size: 0.9rem;
+  color: grey;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
