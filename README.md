@@ -2,6 +2,8 @@
 
 ![](assets/screenshot.png)
 
+### See a [Live Demo](http://scanthng-demo.evrythng.io)
+
 Testing example app for 
 [`scanthng.js`](https://github.com/evrythng/scanthng.js) in the stream scanning 
 mode, allowing you to test scanning many kinds of barcodes on product packaging,
